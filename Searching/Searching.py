@@ -42,8 +42,7 @@ class Searching:
         high = size - 1
         
         while low <= high:
-            mid = low + (high - low) / 2
-            #  To avoid the overflow
+            mid = (low + high) / 2
             if arr[mid] == value:
                 return True
             elif arr[mid] < value:
@@ -59,8 +58,7 @@ class Searching:
     def BinarySearchRecursiveUtil(self, arr, low, high, value):
         if low > high:
             return False
-        mid = low + (high - low) / 2
-        #  To avoid the overflow
+        mid = (low + high) / 2
         if arr[mid] == value:
             return True
         elif arr[mid] < value:
