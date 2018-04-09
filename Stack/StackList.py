@@ -39,16 +39,11 @@ class Stack(object):
             print temp.value,
             temp = temp.next
 
-class StackDemo:    
-    @classmethod
-    def main(cls, args):
-        s = Stack()
-        s.push(1)
-        s.push(2)
-        s.push(3) 
-        s.pop()
-        s.printStack()
 
-if __name__ == '__main__':
-    import sys
-    StackDemo.main(sys.argv)
+s = Stack()
+s.push(1)
+s.push(2)
+s.push(3) 
+s.pop()
+s.printStack()
+

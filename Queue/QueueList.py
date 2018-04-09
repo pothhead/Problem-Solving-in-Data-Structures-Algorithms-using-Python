@@ -45,19 +45,14 @@ class Queue(object):
             print temp.value,
             temp = temp.next
 
-    @classmethod
-    def main(cls, args):
-        q = Queue()
-        i = 1
-        while i <= 100:
-            q.add(i)
-            i += 1
-        i = 1
-        while i <= 50:
-            q.remove()
-            i += 1
-        q.printList()
-
-if __name__ == '__main__':
-    import sys
-    Queue.main(sys.argv)
+ 
+q = Queue()
+i = 1
+while i <= 100:
+    q.add(i)
+    i += 1
+i = 1
+while i <= 50:
+    q.remove()
+    i += 1
+q.printList()

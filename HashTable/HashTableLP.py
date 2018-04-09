@@ -66,20 +66,14 @@ class HashTable(object):
                 print "Node at index [" , i , " ] :: " , self.Arr[i]
             i += 1
 
-class HashTableDemo:
-    @classmethod
-    def main(cls, args):
-        ht = HashTable(1000)
-        ht.InsertNode(89)
-        ht.InsertNode(18)
-        ht.InsertNode(49)
-        ht.Print()
-        ht.DeleteNode(89)
-        ht.DeleteNode(18)
-        ht.DeleteNode(49)
-        ht.Print()
 
+ht = HashTable(1000)
+ht.InsertNode(89)
+ht.InsertNode(18)
+ht.InsertNode(49)
+ht.Print()
+ht.DeleteNode(89)
+ht.DeleteNode(18)
+ht.DeleteNode(49)
+ht.Print()
 
-if __name__ == '__main__':
-    import sys
-    HashTableDemo.main(sys.argv)

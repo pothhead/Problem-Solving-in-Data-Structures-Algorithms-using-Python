@@ -49,16 +49,11 @@ class MedianHeap(object):
             return self.MinHeapPeek()
     
 
-    @classmethod
-    def main(cls, args):
-        arr = [1, 9, 2, 8, 3, 7, 4, 6, 5, 1, 9, 2, 8, 3, 7, 4, 6, 5, 10, 10]
-        hp = MedianHeap()
-        i = 0
-        while i < 20:
-            hp.insert(arr[i])
-            print "Median after insertion of " , arr[i] , " is  " , hp.getMedian()
-            i += 1
 
-if __name__ == '__main__':
-    import sys
-    MedianHeap.main(sys.argv)
+arr = [1, 9, 2, 8, 3, 7, 4, 6, 5, 1, 9, 2, 8, 3, 7, 4, 6, 5, 10, 10]
+hp = MedianHeap()
+i = 0
+while i < 20:
+    hp.insert(arr[i])
+    print "Median after insertion of " , arr[i] , " is  " , hp.getMedian()
+    i += 1

@@ -1,23 +1,24 @@
-class Prime(object):  
-    @classmethod
-    def main(cls, args):
-        print(cls.isPrime(50))
-        print(cls.isPrime(47))
-    
-    @classmethod
-    def isPrime(self, n):
-        if( n > 1):
-            answer = True
-        else:
-            answer = False
-        i = 2
-        while(i*i <= n):
-            if(n%i == 0):
-                answer = False
-                break
-            i += 1
-        return answer     
+def fibonacci2(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
 
-if __name__ == '__main__':
-    import sys
-    Prime.main(sys.argv)
+   
+def fibonacci(n):
+    first = 0
+    second = 1
+    if (n == 0):
+        return first;
+    elif (n == 1):
+        return second;
+    i = 2
+    while(i <= n):
+        temp = first + second
+        first = second
+        second = temp
+        i += 1
+    return temp
+
+
+print(fibonacci(50))
+print(fibonacci2(50))

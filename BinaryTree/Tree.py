@@ -638,110 +638,104 @@ class Tree(object):
         return Head
 
 
-    @classmethod
-    def main(cls, args):
-        #=======================================================================
-        # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        # t2 = Tree()
-        # t2.levelOrderBinaryTree(arr)
-        #=======================================================================
-        #=======================================================================
-        # t = Tree()
-        # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        # # t.levelOrderBinaryTree(arr)
-        # t.InsertNode(5)
-        # t.InsertNode(3)
-        # t.InsertNode(4)
-        # t.InsertNode(2)
-        # t.InsertNode(1)
-        # t.InsertNode(8)
-        # t.InsertNode(7)
-        # t.InsertNode(9)
-        # # print (t.CeilBST(6))
-        # t.printAllPath()
-        # print("")
-        # t.iterativeInOrder()
-        # print("")
-        # t.PrintInOrder()
-        # print("") 
-        # t.iterativePreOrder()
-        # print("")
-        # t.PrintPreOrder()
-        # print("")
-        # t.iterativePostOrder()
-        # print("")        
-        # t.PrintPostOrder()
-        # print("")
-        # 
-        # t.PrintBredthFirst()
-        # # t.treeToList();
-        # print ( t.LCA(10, 3) )
-        #=======================================================================
-        arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        t2 = Tree()
-        # t2.levelOrderBinaryTree(arr)
-        #=======================================================================
-        # t2.InsertNode(5)
-        # t2.InsertNode(3)
-        # t2.InsertNode(4)
-        # t2.InsertNode(2)
-        # t2.InsertNode(1)
-        # t2.InsertNode(8)
-        # t2.InsertNode(7)
-        # t2.InsertNode(9)
-        #=======================================================================
-        #print t2.Ancestor(1, 10)
-        #print t2.CeilBST(7)
-        #print t2.FloorBST(12)
-        t2.CreateBinaryTree(arr)
-        t2.PrintInOrder()
-        print ""
-        t2.iterativeInOrder()
-        print ""
-        t2.PrintPostOrder()
-        print ""
-        t2.iterativePostOrder()
-        print ""
-        t2.PrintPreOrder()
-        print ""
-        t2.iterativePreOrder()
-        #t2.DeleteNode(8)
-        #=======================================================================
-        # t3 = t2.CopyMirrorTree()
-        # t2.PrintInOrder()
-        # print ""
-        # t3.PrintInOrder()
-        # print t2.Find(18)
-        # print t2.findMaxBT()
-        # print t2.FindMax()
-        # print t2.FindMin()
-        # t4 = t2.CopyTree()
-        # t4.PrintInOrder()
-        # print ""
-        # t2.PrintInOrder()
-        # print ""
-        # t2.PrintPostOrder()
-        # print ""
-        # t2.PrintPreOrder()
-        # print ""
-        # print t2.numNodes()
-        # print t2.NthInOrder(2)
-        # print t2.NthPostOrder(2)
-        # print t2.NthPreOrder(2)
-        # print t2.isEqual(t4)
-        # print t2.TreeDepth()
-        # print t2.maxLengthPathBT()
-        # print t2.numFullNodesBT()
-        # print t2.isBST()
-        # print t2.isBST2()
-        # print t2.numLeafNodes()
-        # print t2.numNodes()
-        # print t2.printInRange(4, 7)
-        # print t2.trimOutsideRange(3, 8)
-        # print t2.PrintInOrder()
-        #=======================================================================
-        
-        
-if __name__ == '__main__':
-    import sys
-    Tree.main(sys.argv)
+#=======================================================================
+# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# t2 = Tree()
+# t2.levelOrderBinaryTree(arr)
+#=======================================================================
+#=======================================================================
+# t = Tree()
+# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# # t.levelOrderBinaryTree(arr)
+# t.InsertNode(5)
+# t.InsertNode(3)
+# t.InsertNode(4)
+# t.InsertNode(2)
+# t.InsertNode(1)
+# t.InsertNode(8)
+# t.InsertNode(7)
+# t.InsertNode(9)
+# # print (t.CeilBST(6))
+# t.printAllPath()
+# print("")
+# t.iterativeInOrder()
+# print("")
+# t.PrintInOrder()
+# print("") 
+# t.iterativePreOrder()
+# print("")
+# t.PrintPreOrder()
+# print("")
+# t.iterativePostOrder()
+# print("")        
+# t.PrintPostOrder()
+# print("")
+# 
+# t.PrintBredthFirst()
+# # t.treeToList();
+# print ( t.LCA(10, 3) )
+#=======================================================================
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+t2 = Tree()
+# t2.levelOrderBinaryTree(arr)
+#=======================================================================
+# t2.InsertNode(5)
+# t2.InsertNode(3)
+# t2.InsertNode(4)
+# t2.InsertNode(2)
+# t2.InsertNode(1)
+# t2.InsertNode(8)
+# t2.InsertNode(7)
+# t2.InsertNode(9)
+#=======================================================================
+#print t2.Ancestor(1, 10)
+#print t2.CeilBST(7)
+#print t2.FloorBST(12)
+t2.CreateBinaryTree(arr)
+t2.PrintInOrder()
+print ""
+t2.iterativeInOrder()
+print ""
+t2.PrintPostOrder()
+print ""
+t2.iterativePostOrder()
+print ""
+t2.PrintPreOrder()
+print ""
+t2.iterativePreOrder()
+#t2.DeleteNode(8)
+#=======================================================================
+# t3 = t2.CopyMirrorTree()
+# t2.PrintInOrder()
+# print ""
+# t3.PrintInOrder()
+# print t2.Find(18)
+# print t2.findMaxBT()
+# print t2.FindMax()
+# print t2.FindMin()
+# t4 = t2.CopyTree()
+# t4.PrintInOrder()
+# print ""
+# t2.PrintInOrder()
+# print ""
+# t2.PrintPostOrder()
+# print ""
+# t2.PrintPreOrder()
+# print ""
+# print t2.numNodes()
+# print t2.NthInOrder(2)
+# print t2.NthPostOrder(2)
+# print t2.NthPreOrder(2)
+# print t2.isEqual(t4)
+# print t2.TreeDepth()
+# print t2.maxLengthPathBT()
+# print t2.numFullNodesBT()
+# print t2.isBST()
+# print t2.isBST2()
+# print t2.numLeafNodes()
+# print t2.numNodes()
+# print t2.printInRange(4, 7)
+# print t2.trimOutsideRange(3, 8)
+# print t2.PrintInOrder()
+#=======================================================================
+

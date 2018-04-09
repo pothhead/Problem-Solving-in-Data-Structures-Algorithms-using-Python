@@ -27,25 +27,19 @@ class TwoStack(object):
         self.size2 -= 1
         return self.data.pop()
 
-class TwoStackDemo:
-    @classmethod
-    def main(cls, args):
-        st = TwoStack()
-        i = 0
-        while i < 10:
-            st.StackPush1(i)
-            i += 1
-        j = 0
-        while j < 10:
-            st.StackPush2(j + 10)
-            j += 1
-        i = 0
-        while i < 10:
-            # print "stack one pop value is : " , st.StackPop1()
-            print "stack two pop value is : " , st.StackPop2()
-            i += 1
 
+st = TwoStack()
+i = 0
+while i < 10:
+    st.StackPush1(i)
+    i += 1
+j = 0
+while j < 10:
+    st.StackPush2(j + 10)
+    j += 1
+i = 0
+while i < 10:
+    # print "stack one pop value is : " , st.StackPop1()
+    print "stack two pop value is : " , st.StackPop2()
+    i += 1
 
-if __name__ == '__main__':
-    import sys
-    TwoStackDemo.main(sys.argv)

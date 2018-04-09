@@ -125,25 +125,20 @@ class CircularLinkedList(object):
             temp = temp.next
         print temp.value,
 
-class CircularLinkedListDemo(object):
-    @classmethod
-    def main(cls, args):
-        ll = CircularLinkedList()
-        ll.addHead(1)
-        ll.addHead(2)
-        ll.addHead(3)
-        ll.addHead(1)
-        ll.addHead(2)
-        ll.addHead(3)
-        print ll.size()
-        ll.printList()
-        print()
-        ll2 = ll.copyList()
-        ll2.printList()
-        print()
-        ll3 = ll.copyListReversed()
-        ll3.printList()
 
-if __name__ == '__main__':
-    import sys
-    CircularLinkedListDemo.main(sys.argv)
+ll = CircularLinkedList()
+ll.addHead(1)
+ll.addHead(2)
+ll.addHead(3)
+ll.addHead(1)
+ll.addHead(2)
+ll.addHead(3)
+print ll.size()
+ll.printList()
+print()
+ll2 = ll.copyList()
+ll2.printList()
+print()
+ll3 = ll.copyListReversed()
+ll3.printList()
+

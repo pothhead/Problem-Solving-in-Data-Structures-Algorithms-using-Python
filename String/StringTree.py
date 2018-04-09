@@ -83,31 +83,24 @@ class StringTree(object):
             return self.frequencyUtil(curr.rChild, value)
 
 
-class StringTreeDemo:
-    @classmethod
-    def main(cls, args):
-        tt = StringTree()
-        tt.insert("banana")
-        tt.insert("apple")
-        tt.insert("mango")
-        tt.insert("banana")
-        tt.insert("apple")
-        tt.insert("mango")
-        tt.find("apple")
-        tt.find("banana")
-        tt.find("mango")
-        tt.find("banan")
-        tt.find("appletree")
-        tt.find("grapes")
-        
-        tt.printTree()
-        print "apple::" , tt.frequency("apple")
-        print "banana::" , tt.frequency("banana")
-        print "mango::" , tt.frequency("mango")
-        print "android::" , tt.frequency("android")
 
+tt = StringTree()
+tt.insert("banana")
+tt.insert("apple")
+tt.insert("mango")
+tt.insert("banana")
+tt.insert("apple")
+tt.insert("mango")
+tt.find("apple")
+tt.find("banana")
+tt.find("mango")
+tt.find("banan")
+tt.find("appletree")
+tt.find("grapes")
 
+tt.printTree()
+print "apple::" , tt.frequency("apple")
+print "banana::" , tt.frequency("banana")
+print "mango::" , tt.frequency("mango")
+print "android::" , tt.frequency("android")
 
-if __name__ == '__main__':
-    import sys
-    StringTreeDemo.main(sys.argv)

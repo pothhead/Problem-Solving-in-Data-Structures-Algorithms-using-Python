@@ -112,20 +112,13 @@ class DoublyCircularLinkedList(object):
         print temp.value,
             
             
-    @classmethod
-    def main(cls, args):
-        """ generated source for method main """
-        ll = DoublyCircularLinkedList()
-        ll.addHead(1)
-        ll.addHead(2)
-        ll.addHead(3)
-        ll.addHead(1)
-        ll.addHead(2)
-        ll.addHead(3)
-        print ll.size()
-        ll.printList()
 
-
-if __name__ == '__main__':
-    import sys
-    DoublyCircularLinkedList.main(sys.argv)
+ll = DoublyCircularLinkedList()
+ll.addHead(1)
+ll.addHead(2)
+ll.addHead(3)
+ll.addHead(1)
+ll.addHead(2)
+ll.addHead(3)
+print ll.size()
+ll.printList()

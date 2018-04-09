@@ -312,62 +312,56 @@ class LinkedList(object):
         secondPtr.next = None
 
 
-class LinkedListDemo(object):
-    @classmethod
-    def main(cls, args):
-        ll = LinkedList()
-        ll.sortedInsert(1)
-        ll.sortedInsert(2)
-        ll.sortedInsert(3)
-        ll.sortedInsert(5)
-        ll.sortedInsert(0)
-        ll.printList()
-        ll.makeLoop()
-        print ll.loopDetect()
-        print ll.loopTypeDetect()
-        print ll.loopPointDetect().value
-        print ll.reverseListLoopDetect()
-        print ll.removeLoop()
-        ll.printList()
-        
-        #=======================================================================
-        # print ll.isEmpty()
-        #=======================================================================
-        #=======================================================================
-        # print ll.isEmpty()
-        # print ll.peek()
-        # print ll.removeHead()
-        # ll.printList()
-        #=======================================================================
-        #=======================================================================
-        # print ll.isPresent(5)
-        # print ll.isPresent(2)
-        # ll.removeDuplicate()
-        # print ll.isEmpty()
-        # ll.deleteNodes(3)
-        #=======================================================================
-        #=======================================================================
-        # ll.reverse()
-        # ll.printList()
-        # ll.reverseRecurse()
-        # ll.printList()
-        #=======================================================================
-        #=======================================================================
-        # ll3 = ll.CopyListReversed()
-        # ll3.printList()
-        #  
-        # ll2 = ll.copyList()
-        # ll2.printList()
-        # print ll.findLength()
-        #=======================================================================
-        #=======================================================================
-        # print ll.nthNodeFromBegining(2)
-        # print ll.nthNodeFromEnd(2)
-        # print ll.nthNodeFromEnd2(2)
-        #=======================================================================
 
+ll = LinkedList()
+ll.sortedInsert(1)
+ll.sortedInsert(2)
+ll.sortedInsert(3)
+ll.sortedInsert(5)
+ll.sortedInsert(0)
+ll.printList()
+ll.makeLoop()
+print ll.loopDetect()
+print ll.loopTypeDetect()
+print ll.loopPointDetect().value
+print ll.reverseListLoopDetect()
+print ll.removeLoop()
+ll.printList()
 
+#=======================================================================
+# print ll.isEmpty()
+#=======================================================================
+#=======================================================================
+# print ll.isEmpty()
+# print ll.peek()
+# print ll.removeHead()
+# ll.printList()
+#=======================================================================
+#=======================================================================
+# print ll.isPresent(5)
+# print ll.isPresent(2)
+# ll.removeDuplicate()
+# print ll.isEmpty()
+# ll.deleteNodes(3)
+#=======================================================================
+#=======================================================================
+# ll.reverse()
+# ll.printList()
+# ll.reverseRecurse()
+# ll.printList()
+#=======================================================================
+#=======================================================================
+# ll3 = ll.CopyListReversed()
+# ll3.printList()
+#  
+# ll2 = ll.copyList()
+# ll2.printList()
+# print ll.findLength()
+#=======================================================================
+#=======================================================================
+# print ll.nthNodeFromBegining(2)
+# print ll.nthNodeFromEnd(2)
+# print ll.nthNodeFromEnd2(2)
+#=======================================================================
 
-if __name__ == '__main__':
-    import sys
-    LinkedListDemo.main(sys.argv)        
+      

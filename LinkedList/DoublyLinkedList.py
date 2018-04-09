@@ -173,40 +173,36 @@ class DoublyLinkedList(object):
             curr = curr.next
         return dll
 
-class DoublyLinkedListDemo(object):
-    @classmethod
-    def main(cls, args):
-        ll = DoublyLinkedList()
-        #=======================================================================
-        # ll.addHead(1)
-        # ll.addHead(2)
-        # ll.addHead(3)
-        # ll.addHead(4)
-        # ll.addHead(5)
-        # ll.addHead(6)
-        # ll.printList()
-        # ll.removeHead()
-        # ll.removeHead()
-        # ll.removeHead()
-        # ll.removeHead()
-        # ll.removeHead()
-        # ll.printList()
-        # ll.freeList()
-        # ll.printList()
-        #=======================================================================
-        ll.addHead(11)
-        ll.addHead(21)
-        ll.addHead(31)
-        ll.addHead(41)
-        ll.addHead(51)
-        ll.addHead(61)
-        ll.printList()
-        ll2 = ll.copyList()
-        ll2.printList()
-        ll3 = ll.copyListReversed()
-        ll3.printList()
+
+
+ll = DoublyLinkedList()
+#=======================================================================
+# ll.addHead(1)
+# ll.addHead(2)
+# ll.addHead(3)
+# ll.addHead(4)
+# ll.addHead(5)
+# ll.addHead(6)
+# ll.printList()
+# ll.removeHead()
+# ll.removeHead()
+# ll.removeHead()
+# ll.removeHead()
+# ll.removeHead()
+# ll.printList()
+# ll.freeList()
+# ll.printList()
+#=======================================================================
+ll.addHead(11)
+ll.addHead(21)
+ll.addHead(31)
+ll.addHead(41)
+ll.addHead(51)
+ll.addHead(61)
+ll.printList()
+ll2 = ll.copyList()
+ll2.printList()
+ll3 = ll.copyListReversed()
+ll3.printList()
         
-        
-if __name__ == '__main__':
-    import sys
-    DoublyLinkedListDemo.main(sys.argv)
+

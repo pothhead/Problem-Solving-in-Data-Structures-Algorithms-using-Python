@@ -60,20 +60,13 @@ class HashTableSC(object):
             head = head.next
         return False
 
-class HashTableDemo:
-    @classmethod
-    def main(cls, args):
-        ht = HashTableSC()
-        i = 100
-        while i < 110:
-            ht.insert(i)
-            i += 1
-        print "search 100 :: " , ht.find(100)
-        print "remove 100 :: " , ht.delete(100)
-        print "search 100 :: " , ht.find(100)
-        print "remove 100 :: " , ht.delete(100)
 
-
-if __name__ == '__main__':
-    import sys
-    HashTableDemo.main(sys.argv)
+ht = HashTableSC()
+i = 100
+while i < 110:
+    ht.insert(i)
+    i += 1
+print "search 100 :: " , ht.find(100)
+print "remove 100 :: " , ht.delete(100)
+print "search 100 :: " , ht.find(100)
+print "remove 100 :: " , ht.delete(100)

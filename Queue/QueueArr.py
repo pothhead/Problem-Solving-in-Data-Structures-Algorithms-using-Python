@@ -22,18 +22,13 @@ class Queue(object):
     def printQueue(self):
         print self.data
 
-    @classmethod
-    def main(cls, args):
-        que = Queue()
-        i = 0
-        while i < 20:
-            que.add(i)
-            i += 1
-        i = 0
-        while i < 22:
-            print que.remove()
-            i += 1
 
-if __name__ == '__main__':
-    import sys
-    Queue.main(sys.argv)
+que = Queue()
+i = 0
+while i < 20:
+    que.add(i)
+    i += 1
+i = 0
+while i < 22:
+    print que.remove()
+    i += 1

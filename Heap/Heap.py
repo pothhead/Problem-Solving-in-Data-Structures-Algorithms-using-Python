@@ -62,30 +62,6 @@ class Heap:
             raise RuntimeError("Heap is empty.")        
         return self.arr[1]
 
-    @classmethod
-    def heapSort(cls, array):
-        hp = Heap(array)
-        i = 0
-        while i < len(array):
-            array[i] = hp.remove()
-            i += 1
-
-    @classmethod
-    def main(cls, args):
-        a = [1, 9, 6, 7, 8, 0, 2, 4, 5, 3]
-        hp = Heap(a)
-        hp.printHeap()
-        b = hp.arr[1:]
-        print hp.IsMinHeap(b)
-        print hp.IsMinHeap(a)
-        i = 0
-        while i < len(a):
-            print hp.remove(),
-            i += 1
-        print ""
-        Heap.heapSort(a)
-        print a,
-
     def IsMinHeap(self, arr):
         size = len(arr)
         i = 0
@@ -113,8 +89,26 @@ class Heap:
                     return False
             i += 1
         return True
-        
-        
-if __name__ == '__main__':
-    import sys
-    Heap.main(sys.argv)
+
+
+
+def heapSort(array):
+    hp = Heap(array)
+    i = 0
+    while i < len(array):
+        array[i] = hp.remove()
+        i += 1
+
+a = [1, 9, 6, 7, 8, 0, 2, 4, 5, 3]
+hp = Heap(a)
+hp.printHeap()
+b = hp.arr[1:]
+print hp.IsMinHeap(b)
+print hp.IsMinHeap(a)
+i = 0
+while i < len(a):
+    print hp.remove(),
+    i += 1
+print ""
+heapSort(a)
+print a,

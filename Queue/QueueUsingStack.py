@@ -16,24 +16,18 @@ class QueueUsingStack(object):
             self.stk2.append(value)
         return self.stk2.pop()
 
-    @classmethod
-    def main(cls, args):
-        que = QueueUsingStack()
-        que.add(1)
-        print que.remove()
-        
-        que.add(11)
-        que.add(111)
-        print que.remove()
-        que.add(2)
-        que.add(21)
-        que.add(211)
-        print que.remove()
-        print que.remove()
-        print que.remove()
-        print que.remove()
-        print que.remove()
+que = QueueUsingStack()
+que.add(1)
+print que.remove()
 
-if __name__ == '__main__':
-    import sys
-    QueueUsingStack.main(sys.argv)
+que.add(11)
+que.add(111)
+print que.remove()
+que.add(2)
+que.add(21)
+que.add(211)
+print que.remove()
+print que.remove()
+print que.remove()
+print que.remove()
+print que.remove()

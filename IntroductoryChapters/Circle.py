@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from Shape import Shape
 import math
-""" Source for module Circle """
 class Circle(Shape):
     def __init__(self, r=1):
         self.radius = r
