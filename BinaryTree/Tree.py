@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 from collections import deque
 
+
 class Tree(object):
     class Node(object):
         def __init__(self, v, l=None, r=None):
             self.value = v
             self.lChild = l
-            self.rChild = r    
-    
+            self.rChild = r
+
     def __init__(self):
         self.root = None
 
@@ -24,7 +25,7 @@ class Tree(object):
         if right < size:
             curr.rChild = self.levelOrderBinaryTreeUtil(arr, right)
         return curr
-    
+
     def InsertNode(self, value):
         self.root = self.InsertNodeUtil(self.root, value)
 
@@ -38,25 +39,22 @@ class Tree(object):
                 node.rChild = self.InsertNodeUtil(node.rChild, value)
         return node
 
-    
     def PrintPreOrder(self):
         self.PrintPreOrderUtil(self.root)
 
-
     def PrintPreOrderUtil(self, node):
-        #    pre order  
+        #    pre order
         if node != None:
             print (node.value),
             self.PrintPreOrderUtil(node.lChild)
             self.PrintPreOrderUtil(node.rChild)
 
-    
     def NthPreOrder(self, index):
-        count = [0] 
+        count = [0]
         self.NthPreOrderUtil(self.root, index, count)
 
     def NthPreOrderUtil(self, node, index, count):
-        #    pre order  
+        #    pre order
         if node != None:
             count[0] += 1
             if count[0] == index:
@@ -64,24 +62,22 @@ class Tree(object):
             self.NthPreOrderUtil(node.lChild, index, count)
             self.NthPreOrderUtil(node.rChild, index, count)
 
-    
     def PrintPostOrder(self):
         self.PrintPostOrderUtil(self.root)
 
     def PrintPostOrderUtil(self, node):
-        #    post order  
+        #    post order
         if node != None:
             self.PrintPostOrderUtil(node.lChild)
             self.PrintPostOrderUtil(node.rChild)
             print (node.value),
 
-    
     def NthPostOrder(self, index):
         count = [0]
         self.NthPostOrderUtil(self.root, index, count)
 
     def NthPostOrderUtil(self, node, index, count):
-        #    post order  
+        #    post order
         if node != None:
             self.NthPostOrderUtil(node.lChild, index, count)
             self.NthPostOrderUtil(node.rChild, index, count)
@@ -89,23 +85,19 @@ class Tree(object):
             if count[0] == index:
                 print (node.value),
 
-    
     def PrintInOrder(self):
         self.PrintInOrderUtil(self.root)
 
-
     def PrintInOrderUtil(self, node):
-        #    In order  
+        #    In order
         if node != None:
             self.PrintInOrderUtil(node.lChild)
             print (node.value),
             self.PrintInOrderUtil(node.rChild)
 
-    
     def NthInOrder(self, index):
         count = [0]
         self.NthInOrderUtil(self.root, index, count)
-
 
     def NthInOrderUtil(self, node, index, count):
         if node != None:
@@ -135,10 +127,11 @@ class Tree(object):
         while stk.isEmpty() == False:
             temp = stk.pop()
             print (temp.value),
-            if temp.lChild != None:
-                stk.append(temp.lChild)
             if temp.rChild != None:
                 stk.append(temp.rChild)
+            if temp.lChild != None:
+                stk.append(temp.lChild)
+ 
 
     def Find(self, value):
         curr = self.root
@@ -638,12 +631,12 @@ class Tree(object):
         return Head
 
 
-#=======================================================================
+# =======================================================================
 # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # t2 = Tree()
 # t2.levelOrderBinaryTree(arr)
-#=======================================================================
-#=======================================================================
+# =======================================================================
+# =======================================================================
 # t = Tree()
 # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # # t.levelOrderBinaryTree(arr)
@@ -674,11 +667,11 @@ class Tree(object):
 # t.PrintBredthFirst()
 # # t.treeToList();
 # print ( t.LCA(10, 3) )
-#=======================================================================
+# =======================================================================
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 t2 = Tree()
 # t2.levelOrderBinaryTree(arr)
-#=======================================================================
+# =======================================================================
 # t2.InsertNode(5)
 # t2.InsertNode(3)
 # t2.InsertNode(4)
@@ -687,10 +680,10 @@ t2 = Tree()
 # t2.InsertNode(8)
 # t2.InsertNode(7)
 # t2.InsertNode(9)
-#=======================================================================
-#print t2.Ancestor(1, 10)
-#print t2.CeilBST(7)
-#print t2.FloorBST(12)
+# =======================================================================
+# print t2.Ancestor(1, 10)
+# print t2.CeilBST(7)
+# print t2.FloorBST(12)
 t2.CreateBinaryTree(arr)
 t2.PrintInOrder()
 print ""
@@ -703,8 +696,8 @@ print ""
 t2.PrintPreOrder()
 print ""
 t2.iterativePreOrder()
-#t2.DeleteNode(8)
-#=======================================================================
+# t2.DeleteNode(8)
+# =======================================================================
 # t3 = t2.CopyMirrorTree()
 # t2.PrintInOrder()
 # print ""
@@ -737,5 +730,5 @@ t2.iterativePreOrder()
 # print t2.printInRange(4, 7)
 # print t2.trimOutsideRange(3, 8)
 # print t2.PrintInOrder()
-#=======================================================================
+# =======================================================================
 
